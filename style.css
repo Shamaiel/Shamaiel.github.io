@@ -21,6 +21,7 @@
   
   }
   
+
   :root {
   
       /**
@@ -32,12 +33,13 @@
       --bg-wild-blue-yonder: rgb(28, 107, 225);
       --bg-carolina-blue: rgb(221, 90, 221);
       --bg-prussian-blue: rgb(202, 88, 231);
-      --bg-oxford-blue: rgb(218 189 219);
+      --bg-oxford-blue: rgb(236 88 241);
       --bg-oxford-blue-2: rgb(255, 255, 255);
       --bg-color: #1f242d;
       --second-bg-color: #323946;
       --main-color: #0ef; 
     
+
       /** Text colors */
       --text-color: #000000;
       --text-white: hsla(0, 0%, 100%, 1);
