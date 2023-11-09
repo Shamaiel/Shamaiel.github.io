@@ -23,10 +23,11 @@ menuIcon.onclick = () => {
 
     function NewTab() {
       window.open(
-        "https://drive.google.com/file/d/19B1Fdij3lnjBzmHD0ntUzuc7P_UqU-_e/view?usp=drive_link",
+        "https://drive.google.com/file/d/1joe7Afiaij2iiqrxKSnNrlyTGY1JQTIS/view?usp=sharing",
         "_blank"
       );
     }
+  
 
 // *=============================== scroll sections active link ==================================
 let sections = document.querySelectorAll('section');
