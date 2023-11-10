@@ -15,9 +15,10 @@
         src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
   </script>
 
-
+  
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./style.css">
   <link rel="preload" as="image" href="./images/profile-img.png" />
   <link rel="preload" as="image" href="./images/pattern-2.svg" />
@@ -375,6 +376,7 @@
     <h2 class="heading">GitHub
       <span class="span">Statistics</span>
     </h2>
+  
     <div class="container">
       <div>
         <!-- <div class="react-activity-calendar calendar" style="width: 100%;">
@@ -382,24 +384,28 @@
         </div> -->
         
    
-
+       <div align="center"  class="gitcontro-graph" >
+        <img  style="margin: auto;" src="https://github-readme-activity-graph.vercel.app/graph?username=Shamaiel&theme=react-dark" alt="GitHub Activity Graph">
+       </div>
        
 
         <br /> 
 
-        <div align="center" class="stats" >
+        <div style="display: grid;" align="center" class="stats" >
+         
           <a href="https://github.com/Shamaiel">
-          
-            <img  style="margin: auto;" src="https://github-readme-activity-graph.vercel.app/graph?username=Shamaiel&theme=react-dark" alt="GitHub Activity Graph">
-
-            <img id="github-streak-stats"
-              src="https://github-readme-streak-stats.herokuapp.com/?user=Shamaiel&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
-              alt="" />
+            <br>
+           <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=Shamaiel&theme=dark-ice&border=true&stroke=0000&background=ffffff&fire=000000"
+            alt="GitHub Streak Stats"
+           />
+       
             <br />
             <br />
 
             <img id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=Shamaiel" />
+              src="https://github-readme-stats.vercel.app/api?username=Shamaiel" 
+            />
 
             <br />
             <br />
@@ -416,6 +422,9 @@
 
 
   <!-- GitHub ends -->
+
+
+
 
   <div id="contact">
   
@@ -451,19 +460,21 @@
 
 
   <!--  Footer Starts -->
-
+ 
 
   <footer class="footer">
-    <div class="footer-text">
+    <div  class="footer-text">
 
       <p> Copyright &copy; 2023 by Mohd Shamaiel Wani  All right Reserved.</p>
     </div>
+
     <div class="footer-iconTop">
       <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
   </footer>
 
   <!--  Footer Ends  -->
+
 
   <script src="https://unpkg.com/scrollreveal"></script>
 
