@@ -89,14 +89,27 @@ const typed = new Typed('.multiple-text', {
 
 
 
+// GitHubCalendar(".calendar", "Shamaiel");
+
+// // or enable responsive functionality:
+// GitHubCalendar(".calendar", "Shamaiel", { responsive: true });
+
+// // Use a proxy
+// GitHubCalendar(".calendar", "Shamaiel", {
+//    proxy (username) {
+//      return fetch(`https://your-proxy.com/github?user=${username}`)
+//    }
+// });
+
+
 GitHubCalendar(".calendar", "Shamaiel");
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "Shamaiel", { responsive: true });
+GitHubCalendar(".calendar", "your-username", { responsive: true });
 
 // Use a proxy
-GitHubCalendar(".calendar", "Shamaiel", {
+GitHubCalendar(".calendar", "your-username", {
    proxy (username) {
      return fetch(`https://your-proxy.com/github?user=${username}`)
    }
-});
+}).then(r => r.text())
