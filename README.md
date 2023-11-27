@@ -1,1 +1,0 @@
-# Shamaiel.github.io

@@ -1,0 +1,142 @@
+/*? <!----------------------------------------------- < Portfolio Section > -----------------------------------------------> */
+
+#home{
+  position: relative;
+  background-size: cover;
+}
+#about > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px !important;
+}
+#about > div > div:nth-child(1) {
+  display: grid;
+  place-items: center;
+  width: 48%;
+}
+#user-detail-name {
+  width: 100%;
+  margin: 22px 0px;
+  text-align: left;
+  
+}
+#user-detail-intro{
+  font-size: 1.3rem;
+}
+.portfolio-content {
+  padding: 15px;
+}
+#about {
+  background-size: contain;
+  position: relative;
+  margin-top: 0px !important;
+  width: 90%;
+  padding: 100px 50px 10px 50px !important;
+}
+.portfolioimage{
+  width: 50%;
+  text-align: center;
+}
+#kunalimg {
+width: 70%;
+height: 100%;
+}
+.feverlinks:nth-child(1) {
+  background: #0288D1;
+  padding: 1px 20px 1px 0px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 100ms ease-in-out !important;
+  align-items: flex-start;
+  border: 2px solid rgb(192, 191, 191);
+  transition: all 300ms ease-in-out;
+}
+.feverlinks:nth-child(2) {
+  background: #231f20;
+  padding: 1px 20px 1px 0px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 100ms ease-in-out !important;
+  align-items: flex-start;
+  border: 2px solid rgb(192, 191, 191);
+  transition: all 300ms ease-in-out;
+}
+.feverlinks span {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.feverlinks a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease-in-out !important;
+}
+
+.portfolio-content label {
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--themeblueDark);
+}
+.portfolio-content p {
+  text-align: justify;
+  font-size: 18px;
+}
+#checkoutbio > a {
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: var(--themeblueDark);
+}
+#downloadresumeport {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 0px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+#downloadresumeport::before {
+  border-radius: 5px;
+}
+#logos {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+#logos div {
+  cursor: pointer;
+  margin: 10px;
+  transition: all 350ms ease;
+}
+#logos div:hover,
+.footerimgs div:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(209, 206, 206, 0.24) 0px 3px 8px;
+}
+#logos img {
+  width: 50px;
+}
+
+.profileheading {
+  font-size: 48px;
+}
+#KunalMehraName {
+  font-weight: 500;
+  font-size: 48px;
+  background: -webkit-linear-gradient(#4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#intro{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(66, 65, 65);
+  text-shadow: 1px 2px #ffffff;
+  -webkit-text-stroke: 1px #000000;
+}

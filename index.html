@@ -5,486 +5,975 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohd Shamaiel Wani|Portfolio</title>
-
-  <!-- <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script> -->
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/github-calendar@1.1.0/dist/github-calendar.min.js"></script> -->
-
-  <script
-        src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-  </script>
-
-  
-  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preload" as="image" href="./images/profile-img.png" />
-  <link rel="preload" as="image" href="./images/pattern-2.svg" />
-  <link rel="preload" as="image" href="./images/pattern-3.svg" />
-
-  <link rel="shortcut icon" href="./images/img_56497.webp" type="image/x-icon">
+  <title>Mohd Shamaiel Wani</title>
+  <!--??--------------------------------------------- <Favicon> ----------------------------------------------->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/bd303dea31.js" crossorigin="anonymous"></script>
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
+  <meta name="theme-color" content="#ffffff" />
+  <!--??--------------------------------------------- <CSS FILES> ----------------------------------------------->
+  <link rel="stylesheet" href="CSS/index.css" defer />
+  <link rel="stylesheet" href="CSS/Navbar.css" defer>
+  <link rel="stylesheet" href="CSS/chatbot.css" defer>
+  <link rel="stylesheet" href="CSS/buttons.css" defer />
+  <link rel="stylesheet" href="CSS/Github.css" defer />
+  <link rel="stylesheet" href="CSS/Projects.css" defer />
+  <link rel="stylesheet" href="CSS/Techstack.css" defer />
+  <link rel="stylesheet" href="CSS/Portfolio.css" defer>
+  <link rel="stylesheet" href="CSS/conncet.css" defer />
+  <link rel="stylesheet" href="CSS/MediaQSmall.css" defer>
+  <link rel="stylesheet" href="CSS/MediaQMedium.css" defer>
+  <link rel="stylesheet" href="CSS/githubcalendar.css" defer>
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" defer />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" defer />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body id="top">
-
-  <!--** Navbar **-->
-
-  <header class="header">
-    <a href="#" class="logo">Mohd Shamaiel Wani </a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav id="nav-menu">
-      <a class="nav-link home" href="#home">Home</a>
-      <a class="nav-link about" href="#about">About</a>
-      <a class="nav-link skills" href="#skills">Skills</a>
-      <a class="nav-link projects" href="#projects">Projects</a>
-      <a class="nav-link contact" href="#contact">Contact</a>
-
-
-      <li id="resume-button-1" class="nav-link resume">
-        <a href="./Resume/Mohd-Wani-Resume.pdf" download target="_blank" id="resume-link-1" >Resume<i class='bx bxs-download'></i></a>
-      </li>
-    
-   
+<body>
+  <!--?--------------------------------------------- <Scripts> ----------------------------------------------->
+  <div id="scripties">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"
+      defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" defer>
+    </script>
+    <script src="JS/index.js" defer></script>
+    <script src="JS/Navbar.js" defer></script>
+    <script src="JS/chatbot.js" defer></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js" defer></script>
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js" defer></script>
+  </div>
+  <!--?--------------------------------------------- <Essentials> ----------------------------------------------->
+  <div class="progress-bar">
+    <div class="filled"></div>
+  </div>
+  <div id="loader">
+    <div class="spinner-grow text-primary" role="status">
+    </div>
+    <label>Loading...</label>
+  </div>
+  <button id="topbutton" title="Go to top">
+    <img width="70%" style="filter: invert(); rotate: 180deg;" src="Images/Icons/download.svg" alt="">
+  </button>
+  <!--!--------------------------------------------- Header ----------------------------------------------->
+  <header id="nav-menu">
+    <nav id="stickynav">
+      <div id="NavBrand"> <a id="brandbg" class="navbar-brand" href="#"></a></div>
+      <div id="NavlinkParent">
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link home " href="#home">Home</a></div>
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link about " href="#about">About</a></div>
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link projects" href="#projects">Projects</a></div>
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link github " href="#github">Github</a></div>
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link skills " href="#skills">Skills</a></div>
+        <div class="nav-item buttonunderline" data-navclose><a class="nav-link contact " href="#contact">Contact</a>
+        </div>
+      </div>
+      <div id="MyAccBtn" class="flex">
+        <button id="resume-button-1" class="nav-link resume buttonslide" onclick="resume()">
+          <a href="Mohd-Wani-Resume.pdf" id="resume-link-1" style="color:white"
+            download="Mohd-Wani-Resume.pdf">
+           Resume
+          </a>
+        </button>
+        <button id="navclickbtn" data-navclose>
+          <svg data-navclose xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30">
+            <path data-navclose d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
-  <!--** Navbar Ends **-->
+  <!--!--------------------------------------------- Main Body ----------------------------------------------->
+  <main>
+    <!--todo--------------------------------------------- <Home Section> ----------------------------------------------->
 
-  <!--** Home Section **-->
+    <section id="home" class="FirstView">
+      <img id="netball1" class="netballs" src="Images/netball.svg" alt="">
+      <img id="netball2" class="netballs" src="Images/netball.svg" alt="">
+      <div id="main-conts">
+        <div class="Introbox" data-aos="fade-in">
+          <h1 id="firstviewhello">Hello, I am</h1>
+          <h1 id="firstviewkunal">
+           
+            <span class="HeadLetter">M</span><span class="HeadLetter">o</span><span class="HeadLetter">h</span><span
+              class="HeadLetter">d</span>
 
-  <section class="home" id="home">
 
-    <div class="home-content">
-      <h3>Hello, I am</h3>
+            <span class="HeadLetter">S</span><span class="HeadLetter">h</span><span class="HeadLetter">a</span><span
+              class="HeadLetter">m</span><span class="HeadLetter">a</span><span class="HeadLetter">i</span><span class="HeadLetter">e</span><span class="HeadLetter">l</span>
 
-      <h1 id="user-detail-name">Mohd Shamaiel Wani </h1>
-      <h3>And I'm a <br><span class="multiple-text"></span></h3>
+              <span class="HeadLetter">W</span><span class="HeadLetter">a</span><span class="HeadLetter">n</span><span
+              class="HeadLetter">i</span>
 
-      <div class="social-media">
-        <a href="https://github.com/Shamaiel" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/m-s-wani-1517981ba/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          </h1>
+          <h2 id="intro">Full Stack Web Developer⭐</h2>
+          <p>
+            🚀A passionate Full Stack Web Developer from Kashmir, India. 
+          </p>
+          <br>
+          <div id="Letsexploreparent">
+            <a href="#about"><button id="LetsExplore" class="buttonslide">Lets Explore</button></a>
+            <button onclick="resume()" id="resume-button-2" class="buttonslide">
+              <a id="resume-link-2" style="color:white" href="Mohd-Wani-Resume.pdf" target="_blank"
+                download="Mohd-Wani-Resume.pdf">
+                CV </a>
+              <img width="30%" style="filter: invert();" src="Images/Icons/download.svg" alt=""> </button><br>
+          </div>
+        </div>
+        <div id="imaging">
+          <img src="./Images/Profiles/mswani.jpg" alt="">
+        </div>
       </div>
+    </section>
 
-      <li id="resume-button-2">
-        <a href="./Resume/Mohd-Wani-Resume.pdf" download target="_blank" id="resume-link-2" class="button"
-          >Resume<i class='bx bxs-download'></i></a>
-      </li>
+    <!--todo--------------------------------------------- <Portfolio Section> ----------------------------------------------->
 
+    <section id="about" class="about section">
+      <img id="scorlldowngif" src="Images/Icons/scorll.gif" alt="error">
+      <h1 id="Aboutroll" class="SectionHeads">About Me <label id="Aboutrolldim"> >
+          About Me ></label></h1>
+      <br />
+      <div>
+        <div class="portfolio-content" data-aos="fade-up">
+          <h1 id="user-detail-name" class="profileheading"><label id="KunalMehraName">Mohd Shamaiel Wani</label>
+          </h1>
+          <p id="user-detail-intro">
+            <label style="  background: -webkit-linear-gradient(#0093E9, #80d0c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;"></label>
+            🚀A passionate Full Stack Web Developer from Kashmir, India. with strong problem-solving 
+            abilities, proficient in React Js, NodeJs, Mongo DB, Express Js, 
+            Material UI and Chakra UI keen to learn new technologies. 
+            Looking forward to starting career in a any growing company driven by technology. 
+            I am committed to delivering excellence and contributing to the continued 
+            growth and success of innovative web applications.
+          </p>
+          <br>
+          <div>
+            <a href="Mohd-Wani-Resume.pdf" download>
+              <button onclick="resume()" id="downloadresumeport" class="buttonslide">
+                Resume <i class="fa-solid fa-download"></i>
+              </button>
 
-    </div>
+              <div>
+                <br />
+                <a style="color: var(--themeblue); font-size: 1.5rem;">Contact Me Here!</a>
+                <br />
+                <a style=" font-size: 1.3rem;">
+                  I assure you the quickest response you might recieve from me would
+                  be on an email - not a social media DM.
+                </a>
+                <br />
+                <div id="logos">
+                  <div class="feverlinks">
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/m-s-wani-1517981ba/"
+                      target="_blank"><img loading="lazy" src="Images/social/icons8-linkedin.svg" alt="" />
+                      <span>LinkedIn</span></a>
+                  </div>
+                  <div class="feverlinks">
+                    <a id="contact-github" href="https://github.com/Shamaiel" id="contact-github"
+                      target="_blank"><img loading="lazy" src="Images/social/github.svg" alt="" />
+                      <span>Github</span></a>
+                  </div>
+                </div>
+                <a style="color: var(--themeblue);font-size: 1.4rem;">Email: </a><a id="contact-email" style="font-size: 1.4rem;">mswani258@gmail.com</a>
+                <br />
+                <a style="color: var(--themeblue);font-size: 1.4rem;">Contact: </a><a id="contact-phone" style="font-size: 1.4rem;">+91 7006822034 </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      
+        <div class="portfolioimage" data-aos="fade-up">
+          <img id="kunalimg" class="home-img" src="https://t3.ftcdn.net/jpg/01/20/70/12/240_F_120701251_TvRAaX7aVM5ZDtr3mcFZN3BxaGgErArB.jpg" alt="" />
+        </div>
+     
 
-    <div class="home-image">
-      <img  class="home-img" style="border-radius: 100px;"
-      src="./Images/mswani.jpg" alt="profile-pic" />
-    </div>
-
-
-
-    <img
-      src="https://raw.githubusercontent.com/rajtupe987/rajtupe987.github.io/55169b75c2198c06212627f3c47d9be8853150e3/images/shadow-1.svg"
-      width="500" height="800" alt="" class="hero-bg hero-bg-1" />
-
-    <img
-      src="https://raw.githubusercontent.com/rajtupe987/rajtupe987.github.io/55169b75c2198c06212627f3c47d9be8853150e3/images/shadow-2.svg"
-      width="500" height="500" alt="" class="hero-bg hero-bg-2" />
-    </div>
-  </section>
-  <!--** Home Section Ends **-->
-
-
-  <!--** About Section ** -->
-
-  <section id="about" class="about section">
-
-    <h2 class="heading"><i class='bx bx-user'></i>About
-      <span>Me!</span>
-      <div class="about-content">
-        <!-- <h3>I'm <span>Mohd Shamaiel Wani</span></h3> -->
-        <h3 style="color: rgb(237, 104, 195);">Full-stack web Developer</h3>
-        <p id="user-detail-intro">
-          🚀A passionate Full Stack Web Developer with strong problem-solving abilities, 
-            proficient in React Js, NodeJs, Mongo DB, Express Js, Material UI and Chakra UI  
-            keen to learn new technologies.
-            Looking forward to starting career in a any growing company driven by technology. I am committed to delivering excellence and contributing to the continued growth and success of innovative web applications.
-        </p>
       </div>
-  </section>
+    </section>
 
-  <!-- ** About Section End ** -->
+    <!--todo--------------------------------------------- <Projects Section> ----------------------------------------------->
 
-
-  <!--skills start-->
-
-  <section id="skills" class="skills">
-    <div class="container tags">
-      <h2 class="heading">Skills &
-        <span>Abilities</span>
-      </h2>
-
-      <ul class="grid-list">
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://www.w3.org/html/logo/img/mark-word-icon.png" class="skills-card-img" width="32"
-              height="32" loading="lazy" alt="HTML" />
-
-            <p class="skills-card-name">HTML</p>
-          </button>
-        </li>
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" class="skills-card-img" width="32"
-              height="32" loading="lazy" alt="CSS" />
-
-            <p class="skills-card-name">CSS</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
-
-            <p class="skills-card-name">JavaScript</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="NodeJS" />
-
-            <p class="skills-card-name">NodeJS</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="Express" />
-
-            <p class="skills-card-name">Express</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="MongoDB" />
-
-            <p class="skills-card-name">MongoDB</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="Mongoose" />
-
-            <p class="skills-card-name">Redux</p>
-          </button>
-        </li>
-        <li>
-          <button class="skills-card tag-btn">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
-              class="skills-card-img" width="32" height="32" loading="lazy" alt="GIT" />
-
-            <p class="skills-card-name">React Js</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32"
-              loading="lazy" class="skills-card-img" />
-
-            <p class="skills-card-name">GIT</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img class="skills-card-img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1080px-Npm-logo.svg.png?20140904162625"
-              width="32" height="32" loading="lazy" alt="NPM" />
-
-            <p class="skills-card-name">NPM</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img class="skills-card-img"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32" height="32"
-              loading="lazy" />
-
-            <p class="skills-card-name">VSCode</p>
-          </button>
-        </li>
-
-        <li>
-          <button class="skills-card tag-btn">
-            <img class="skills-card-img"
-              src="Images/chakraui.svg"
-              loading="lazy" />
-
-            <p class="skills-card-name">Chakra UI</p>
-          </button>
-        </li>
-
-      </ul>
-    </div>
-
-    <div class="skills-container">
-      <div class="skills-card-1">
-        <i class='bx bx-code-alt' class="skills-card-img"></i>
-        <h3 class="skills-card-name">Full Stack Development</h3>
-        <p>HTML | CSS | JavaScript | React Js | Express | MongoDB</p>
+    <section id="projects">
+      <h1 id="projectHead" class="SectionHeads">Projects <label id="Aboutrolldim"> > Projects > </label></h1>
+      <br />
+      <div class="AllProjects">
        
-      </div>
-      <div class="skills-card-1">
-        <i class='bx bxl-codepen' class="skills-card-img"></i>
-        <h3 class="skills-card-name">Data Structure Algorithm</h3>
-        <p> Two Pointer | Stack & Queue | LinkedList |
-          Recursion | DP </p>
-       
-      </div>
-    </div>
-
-  </section>
-
-  <!-- skills ends --->
-
-
-
-  <!-- Project Starts -->
-
-
-  <section class="project" id="projects">
-    <h2 class="heading">My
-      <span style="color: black;" >Projects</span>
-    </h2>
-
-    <div class="project-container">
-
-      <div class="project-card">
-        <img
-          src="./Images/adventour.png"
-          alt="">
-
-        <div class="project-layer">
-
-          <div class="project-layer">
-            <h4 class="project-title">Adventour Travels</h4>
-            <p class="project-description">Adventour is an travel website. Travellers can book their favourite detination location.
-              </p>
-            <h5 class="project-tech-stack">REACT | REUDUX | JS | MATERIAL UI</h5>
-            <div class="projectlinks">
-              <a href="https://github.com/monurajputrko/Adventour" class="project-github-link"><i
-                  class='bx bxl-github'></i></a>
-              <a href="https://adventour-e3im-git-booking-monurajputrko.vercel.app/" target="_blank" class="project-deployed-link"><i
-                  class='bx bxl-netlify'></i></a>
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject stylezillabg">
+            <h1 class="projectcount">01</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">Adventour-Travels</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  Adventour is an travel website. Travellers can book their favourite detination location.
+                </p>
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#StyleZillaModal" data-stylezilla>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link"
+                    href="https://adventour-e3im-git-booking-monurajputrko.vercel.app/" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+                  <a class="project-github-link" href="https://github.com/monurajputrko/Adventour"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                  <!-- <a href=""
+                    target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/play.png" alt="" />
+                      Live Video
+                    </button></a> -->
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
-      </div>
 
-      <div class="project-card">
-        <img
-          src="./Images/Nykaa.png"
-          alt="Nykaa image">
 
-        <div class="project-layer">
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject acelegalservice">
+            <h1 class="projectcount">02</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">Mine Wine</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  Web App which has all sorts and tastes of your favourite wines.
+                </p>
 
-          <div class="project-layer">
-            <h4 class="project-title">Nykaa</h4>
-            <p class="project-description">It's clone of Nykaa e-commerce website. Buyer can purchase any item from clothing to Perfumes. User can also Checkout using any card.. I implemented sort, filter search functioanlity also
-              </p>
-            <h5 class="project-tech-stack">HTML | CSS | JS | Bootstrap</h5>
-            <div class="projectlinks">
-              <a href="https://github.com/Shamaiel/Project-Nykaa" class="project-github-link"><i
-                  class='bx bxl-github'></i></a>
-              <a href="https://adventour-e3im-git-booking-monurajputrko.vercel.app/" target="_blank" class="project-deployed-link"><i
-                  class='bx bxl-netlify'></i></a>
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#acelegalModal" data-acelegal>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://655e1490fd1a4138593e6c56--capable-eclair-1ae3b7.netlify.app/" target="_blank"><button
+                      class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button>
+                  </a>
+                  <a class="project-github-link" href="https://github.com/Rishusingh7388/Wine_shop-Project"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button>
+                  </a>
+              
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
-      </div>
 
 
-
-      <div class="project-card">
-        <img
-          src="./Images/minewine.png"
-          alt="">
-
-        <div class="project-layer">
-
-          <div class="project-layer">
-            <h4 class="project-title">Mine Wine</h4>
-            <p class="project-description">Mine Wine has all sorts and tastes of your favourite wines.</p> 
-            <h5 class="project-tech-stack">HTML | CSS | JavaScript | Tailwind CSS</h5>
-            <div class="projectlinks">
-              <a href="https://github.com/Rishusingh7388/Wine_shop-Project" class="project-github-link"><i
-                  class='bx bxl-github'></i></a>
-              <a href="https://655e1490fd1a4138593e6c56--capable-eclair-1ae3b7.netlify.app/" target="_blank" class="project-deployed-link"><i
-                  class='bx bxl-netlify'></i></a>
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject orangefrybg">
+            <h1 class="projectcount">03</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">Nykaa CLone</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  It's clone of Nykaa e-commerce website. Buyer can purchase any item from clothing to Perfumes. 
+                  User can also Checkout using any 
+                  card.. I implemented sort, filter search functioanlity also
+                </p>
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#OrangeFryModal" data-orangefry>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://easemeet.onrende.com/" target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+                  <a class="project-github-link" href="https://github.com/Shamaiel/Project-Nykaa"
+                    target="_blank"><button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                
+                </div>
+              </div>
             </div>
-
+            <div class="OneProject"></div>
           </div>
         </div>
-      </div>
 
-      <div class="project-card">
-        <img
-          src="./Images/3dPortfolio.png"
-          alt="">
-
-        <div class="project-layer">
-
-          <div class="project-layer">
-            <h4 class="project-title">3d Portfolio</h4>
-            <p class="project-description">It is 3d portfolio of my work that i created using Threejs and material UI.</p> 
-            <h5 class="project-tech-stack"> Reactjs | Tailwindcss | CSS | JavaScript | Threejs</h5>
-            <div class="projectlinks">
-              <a href="https://github.com/Shamaiel/Portfolio-1" class="project-github-link"><i
-                  class='bx bxl-github'></i></a>
-              <a href="https://portfolio-1-mswani.vercel.app/" class="project-deployed-link"><i
-                  class='bx bxl-netlify'></i></a>
+        <div class="project-card" data-aos="fade-up">
+          <div class="OneProject mycalbg">
+            <h1 class="projectcount">04</h1>
+            <div class="OPRBGB">
+              <div class="project-title OnePRhead">3d Portfolio</div>
+              <div class="project-tech-stack OnePRdetails">
+                <p class="project-description">
+                  It is 3d portfolio of my work that i created using Threejs and material UI.
+                </p>
+                <button type="button" class="ClickModalBtn buttonslide" data-bs-toggle="modal"
+                  data-bs-target="#MyCalModal" data-astry>
+                  Click here to know more
+                  <img loading="lazy" class="downsee" src="Images\Icons\downsee.gif" alt="" />
+                </button>
+                <br />
+                <div class="projlinks">
+                  <a class="project-deployed-link" href="https://portfolio-1-mswani.vercel.app/"
+                    target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay sitebutton" src="Images/Icons/opensite.svg" alt="" />
+                      Site
+                    </button></a>
+                  <a class="project-github-link" href="https://github.com/Shamaiel/Portfolio-1"
+                    target="_blank">
+                    <button class="downseeG">
+                      <img loading="lazy" class="gitplay" src="Images/Icons/GitHub.png" alt="" />
+                      Github
+                    </button></a>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
-      </div>
-
+        
       
 
 
-    </div>
-  </section>
-  <!--Project Ends -->
+      </div>
+    </section>
 
+    <!--*--------------------------------------------- <AI-Influencer Modal> ----------------------------------------------->
+    <div id="MODAL">
+      <div class="modal fade" id="StyleZillaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b> Adventure Travels</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>Adventure Travels</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>Travel Website</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>
+                      AI Influencer is a web application that allows users to login, signup, and chat with a chatbot
+                      that responds to queries related to parenting. The application also provides users the ability to
+                      view their chat history.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Group Project</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 5 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>Built a modern and user-friendly travel app using
+                          React, JS, Redux, Material UI, and Tailwind CSS.
+                          </li>
+                        <li>Developed the explore page where users can check all
+                          the destinations they wish to visit and add them to their
+                          wishlist.
+                          </li>
+                        <li>Worked on the UI of the Home Page to enhance the
+                          user experience.
+                          </li>
+                        <li>Implemented interactive bill and payment features for
+                          seamless transactions.
+                          </li>
+                        <li>Created a responsive design to ensure optimal user
+                          experience across devices</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/React.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
 
-  <!-- GitHub starts -->
-
-  <div id="github-stats">
-    <h2 class="heading">GitHub
-      <span class="span">Statistics</span>
-    </h2>
-  
-    <div class="container">
-      <div>
-        <!-- <div class="react-activity-calendar calendar" style="width: 100%;">
-          Loading the data just for you.
-        </div> -->
-        
-   
-       <div align="center"  class="gitcontro-graph" >
-        <img  style="margin: auto;" src="https://github-readme-activity-graph.vercel.app/graph?username=Shamaiel&theme=react-dark" alt="GitHub Activity Graph">
-       </div>
-       
-
-        <br /> 
-
-        <div style="display: grid;" align="center" class="stats" >
-         
-          <a href="https://github.com/Shamaiel">
-            <br>
-           <img id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com/?user=Shamaiel&theme=dark-ice&border=true&stroke=0000&background=ffffff&fire=000000"
-            alt="GitHub Streak Stats"
-           />
-       
-            <br />
-            <br />
-
-            <img id="github-stats-card"
-              src="https://github-readme-stats.vercel.app/api?username=Shamaiel" 
-            />
-
-            <br />
-            <br />
-
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs?username=Shamaiel&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
-              id="github-top-langs" />
-          </a>
+                      <img loading="lazy" src="data:image/png;base64,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" alt="">
+                      
+                    </td>
+                  </tr>
+               
+                </table>
+              </div>
+            
+          </div>
         </div>
-       </div>
+      </div>
     </div>
+    <!--*--------------------------------------------- <meetease modal> ----------------------------------------------->
+    <div id="MODAL">
+      <!-- Modal -->
+      <div class="modal fade" id="OrangeFryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1><b>Nykaa CLone</b></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="DetailsModalBox">
+                <table>
+                  <tr>
+                    <td><b>Name</b></td>
+                    <td>Nykaa CLone</td>
+                  </tr>
+                  <tr>
+                    <td><b>Category</b></td>
+                    <td>E-Commerce Web App</td>
+                  </tr>
+                  <tr>
+                    <td><b>Description</b></td>
+                    <td>About
+                      An ecommerce webiste, it was collabrated project, functionalities are user can 
+                      signIn, order product, sort, filter products and then checkout with payment also.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Type</b></td>
+                    <td>Group Project - 4 Members</td>
+                  </tr>
+                  <tr>
+                    <td><b>Duration</b></td>
+                    <td> 5 Days</td>
+                  </tr>
+                  <tr>
+                    <td><b>Features</b></td>
+                    <td>
+                      <ul>
+                        <li>Developed a fully functional clone of shop.com with all
+                          functionalities
+                          </li>
+                        <li>Implemented sign-in/sign-up page and user
+                          authentication</li>
+                        <li>Created product page and product description page</li>
+                        <li>Integrated add to cart and payment functionality using
+                          RazorPay</li>
+                        <li>Designed and implemented the navbar and footer
+                          components</li>
 
-  </div>
+                      </ul>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Tech Stack Used</b></td>
+                    <td id="teckstakmodal">
+                      <img loading="lazy" src="Images/Icons/html.png" alt="">
+                      <img loading="lazy" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" src="Images/Icons/js.png" alt="">
+                     
+                      <img loading="lazy" id="modalbootst" src="Images/Icons/Bootstrap_logo.svg.png" alt="">
+                    </td>
+                  </tr>
+                 
+
+                </table>
+
+              </div>
+              <!-- here is project details -->
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--*--------------------------------------------- <bookmyshoot Modal> ----------------------------------------------->
+      <div id="MODAL">
+        <!-- Modal -->
+        <div class="modal fade" id="acelegalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <h1><b>MIne Wine</b></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="DetailsModalBox">
+                  <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>MIne Wine</td>
+                    </tr>
+                    <tr>
+                      <td><b>Category</b></td>
+                      <td>E-COmmerce website for all dorts of alcholic drinks</td>
+                    </tr>
+                    <tr>
+                      <td><b>Description</b></td>
+                      <td>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Type</b></td>
+                      <td>Group Project - 4 Members</td>
+                    </tr>
+                    <tr>
+                      <td><b>Duration</b></td>
+                      <td> 5 Days</td>
+                    </tr>
+                    <tr>
+                      <td><b>Features</b></td>
+                      <td>
+                        <ul>
+                          <li>Authentication with firebase(Login, Signup).
+                          </li>
+                          <li>Developed product page
+                          </li>
+                          <li>Developed product description page</li>
+                         
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+
+                      <td><b>Tech Stack Used</b></td>
+                      <td id="teckstakmodal">
+                        <img loading="lazy" src="Images/Icons/html.png" alt="">
+                        <img loading="lazy" width="50px" src="Images/Icons/css.png" alt="">
+                      <img loading="lazy" id="modalbootst" src="Images/Icons/Bootstrap_logo.svg.png" alt="">
+
+                        <img loading="lazy" src="Images/Icons/js.png" alt="">
+                       
+                    
+                      </td>
+                    </tr>
+                   
 
 
-  <!-- GitHub ends -->
+                  </table>
+
+                </div>
+                <!-- here is project details -->
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--*--------------------------------------------- <Clarks Modal> ----------------------------------------------->
+      <div id="MODAL">
+        <!-- Modal -->
+        <div class="modal fade" id="MyCalModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  <h1><b>3d Portfolio</b></h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="DetailsModalBox">
+                  <table>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td>3d Portfolio</td>
+                    </tr>
+                    <tr>
+                      <td><b>Category</b></td>
+                      <td>portfolio with Threejs</td>
+                    </tr>
+                    <tr>
+                      <td><b>Description</b></td>
+                      <td>
+                        Clarks Original is a full-stack web application that replicates the functionality and design of
+                        the Clarks USA website. It provides users with features to register, login, browse products, add
+                        products, update products, and delete products. The application incorporates modern web
+                        technologies to deliver a seamless user experience.
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Type</b></td>
+                      <td>Solo Project</td>
+                    </tr>
+                    <tr>
+                      <td><b>Duration</b></td>
+                      <td> 2 Days</td>
+                    </tr>
+                    <tr>
+                      <td><b>Features</b></td>
+                      <td>
+                        <ul>
+                          <li></li>
+                          <li>Amazing 3d UI</li>
+                          <li> I have implemented email functioanlity, user can email to me by filling details.
+                          </li>
+                         
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><b>Tech Stack Used</b></td>
+                      <td id="teckstakmodal">
+                        <img loading="lazy" src="data:image/png;base64,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" alt="">
+
+                        <img loading="lazy" src="data:image/png;base64,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" alt="">
+                        <img loading="lazy" src="Images/Icons/html.png" alt="">
+
+                        <img loading="lazy" src="Images/Icons/css.png" alt="">
+
+                        <img loading="lazy" src="data:image/png;base64,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" alt="">
+
+                        <img loading="lazy" src="Images/Icons/js.png" alt="">
+                        <img loading="lazy" src="Images/Icons/thr" alt="">
+                       
+                      </td>
+                    </tr>
+                  
+                  </table>
+                </div>
+                <!-- here is project details -->
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+      <!--todo--------------------------------------------- <Github Section> ----------------------------------------------->
+
+      <section id="github">
+        <h1 id="Githead" class="SectionHeads" data-aos="fade-up">Github Stats <img loading="lazy" id="octopus"
+            src="Images/Icons/githubocto.png" alt="">
+        </h1>
+
+        <div id="Github_Section">
+          <!--??--------------------------------------------- <git 1> ----------------------------------------------->
+          <div class="Git1">
+            <br>
+            <div id="gitcontri">
+              <img loading="lazy" id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=Shamaiel&theme=default&hide_border=true&date_format=j%20M%5B%20Y%5D"
+                alt="streak" />
+              <img loading="lazy" id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=Shamaiel&show_icons=true&locale=en&&theme=default&hide_border=true"
+                alt="ovi" />
+            </div>
+            <br>
+            <div class="gitstreak">
+              <img loading="lazy" id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shamaiel&theme=default&show_icons=true&locale=en&hide_border=true"
+                alt="ovi" />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--todo--------------------------------------------- <Tech Stack Section> ----------------------------------------------->
+
+      <section id="skills">
+        <div>
+          <h1 id="techstakhead" class="SectionHeads " data-aos="fade-up">TechStack & Skills <img loading="lazy"
+              id="catty" src="https://cdni.iconscout.com/illustration/premium/thumb/cute-little-boy-working-on-laptop-4619248-3821961.png" alt=""></h1>
+          <div id="TechStackBigParent">
+            <div class="TechStackBox SkillBox1">
+              <div>
+                <center>
+                  <h1 class="SkillsHeads buttonslide Techskillshead" data-aos="fade-right" data-aos-delay="5"> Technical
+                    Skills</h1>
+                </center>
+                <!-- <label style="text-decoration: underline;font-weight: 300; font-size: 20px;">My Best Skills </label> -->
+                <div class="Tech-StackBoxParent">
+                  <div class="Tech-StackBox">
+                    <div class="skills-card skills-red" data-aos="fade-right" data-aos-delay="10">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/html-5.svg" alt="logoA3">
+                      <a class="skills-card-name">HTML</a>
+                    </div>
+                    <div class="skills-card skills-blue" data-aos="fade-right" data-aos-delay="15">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/css-3.svg" alt="logoA3">
+                      <a class="skills-card-name">CSS</a>
+                    </div>
+                    <div class="skills-card skills-yellow" data-aos="fade-right" data-aos-delay="20">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/javascript.svg" alt="logoA3">
+                      <a class="skills-card-name">JavaScript</a>
+                    </div>
+                    <div class="skills-card skills-green" data-aos="fade-right" data-aos-delay="25">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/nodejs-icon.svg" alt="logoA3">
+                      <a class="skills-card-name">Node.js</a>
+                    </div>
+                    <div class="skills-card skills-black" data-aos="fade-right" data-aos-delay="30">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/expressjs-icon.svg" alt="logoA3">
+                      <a class="skills-card-name">Express.js</a>
+                    </div>
+                    <div class="skills-card skills-blue" data-aos="fade-right" data-aos-delay="35">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/react-svgrepo-com.svg" alt="logoA3">
+                      <a class="skills-card-name">React</a>
+                    </div>
+                    <div class="skills-card skills-black" data-aos="fade-right" data-aos-delay="40">
+                      <img style="filter: saturate(4);" class="skills-card-img"
+                        src="Images/techstack/Smolicons/graphDSA.svg" alt="logoA3">
+                      <a class="skills-card-name">Data Structures & Algorithms</a>
+                    </div>
+                   
+                    <div class="skills-card skills-orange" data-aos="fade-right" data-aos-delay="50">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/aws-svgrepo-com.svg" alt="logoA3">
+                      <a class="skills-card-name">AWS</a>
+                    </div>
+                
+                    <div class="skills-card skills-blue" data-aos="fade-right" data-aos-delay="60">
+                      <img class="skills-card-img" src="Images/techstack/Smolicons/typescript-svgrepo-com.svg"
+                        alt="logoA3">
+                      <a class="skills-card-name">TypeScript</a>
+                    </div>
+                 
+                 
+                  
+                    <div class="skills-card skills-blue" data-aos="fade-right" data-aos-delay="80">
+                      <img class="skills-card-img" src="Images/Icons/OpenAI.png" alt="logoA3">
+                      <a class="skills-card-name">OpenAI</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="HexagonBox SkillBox2">
+              <div id="hex1" class="hexagon">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex " class="skills-card-img"
+                    src="Images/techstack/htmlB.png" alt="">
+                </div>
+              </div>
+              <div id="hex2" class="hexagon">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex " class="skills-card-img"
+                    src="Images/techstack/cssB.png" alt="">
+                </div>
+              </div>
+              <div id="hex3" class="hexagon">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex" class="skills-card-img"
+                    src="Images/techstack/exprBl.png" alt="">
+                </div>
+              </div>
+              <div id="hex4" class="hexagon ">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex " class="skills-card-img"
+                    src="Images/techstack/js.png" alt="">
+                </div>
+              </div>
+              <div id="hex5" class="hexagon">
+                <!--  data-aos="zoom-in" Middle One -->
+                <div data-aos="zoom-in"> <img loading="lazy" class="gear" src="Images/Icons/gear.gif" alt=""> <label
+                    id="skillcenter">SKILLS</label>
+                </div>
+              </div>
+
+              <div id="hex6" class="hexagon">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex" class="skills-card-img"
+                    class="skills-card-img" src="Images/techstack/mngoB.png" alt="">
+                </div>
+              </div>
+              <div id="hex7" class="hexagon ">
+                <div data-aos="zoom-in"><img loading="lazy" class="techhex" class="skills-card-img"
+                    class="skills-card-img" src="Images/techstack/nodeB.png" alt="">
+                </div>
+              </div>
+              <img loading="lazy" id="pg1" class="p68" src="Images/techstack/p68.png" alt="">
+              <img loading="lazy" id="pg2" class="p68" src="Images/techstack/p68.png" alt="">
+              <img loading="lazy" id="pg3" class="p68" src="Images/techstack/p68.png" alt="">
+              <img loading="lazy" id="pg4" class="p68" src="Images/techstack/p68.png" alt="">
+              <img loading="lazy" id="pg5" class="p68" src="Images/techstack/p68.png" alt="">
+              <img loading="lazy" id="pg6" class="p68" src="Images/techstack/p68.png" alt="">
+            </div>
+            <div class="TechStackBox SkillBox3">
+
+              <div class="Stk-box-parent">
+                <center>
+                  <h1 class="SkillsHeads buttonslide" data-aos="fade-left" data-aos-delay="5"> Soft Skills</h1>
+                </center>
+                <div class="SoftSkillBox">
+                  <div class="skills-card skills-blue" data-aos="fade-left" data-aos-delay="10">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/remotework.svg"
+                      alt="logoA3">
+                    <a class="skills-card-name">Remote Work-Collaboration</a>
+                  </div>
+                  <div class="skills-card skills-yellow" data-aos="fade-left" data-aos-delay="20">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/teamwork.svg" alt="logoA3">
+                    <a class="skills-card-name">Teamwork</a>
+                  </div>
+                  <div class="skills-card skills-red" data-aos="fade-left" data-aos-delay="30">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/leadership-svgrepo-com.svg"
+                      alt="logoA3">
+                    <a class="skills-card-name">Leadership</a>
+                  </div>
+                  <div class="skills-card skills-green" data-aos="fade-left" data-aos-delay="40">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/problemsolving.svg"
+                      alt="logoA3">
+                    <a class="skills-card-name"> Problem-Solving</a>
+                  </div>
+
+                  <div class="skills-card skills-orange" data-aos="fade-left" data-aos-delay="50">
+                    <img class="skills-card-img" src="Images/techstack/Smolicons/softskills/time-management.svg"
+                      alt="logoA3">
+                    <a class="skills-card-name"> Time Management</a>
+                  </div>
+                </div>
+              </div>
+              <div class="Stk-box-parent" data-aos="fade-left">
+                <center>
+                  <h1 class="SkillsHeads buttonslide"> Toolset</h1>
+                </center>
+                <div class="Toolset">
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="GitHub"
+                      src="Images/toolset/github.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="VScode"
+                      src="Images/toolset/vscode.svg"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="99%" alt="Tool" title="Figma"
+                      src="Images/toolset/figma.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="98%" alt="Tool" title="Bootstrap"
+                      src="Images/toolset/bootstrap.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Firebase"
+                      src="Images/toolset/firebase.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="ChatGPT"
+                      src="Images/toolset/chatgpt.webp"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Canva"
+                      src="Images/toolset/canva.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Ant Design"
+                      src="Images/toolset/antdesign.png" alt=""></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Vercel"
+                      src="Images/toolset/vercel.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Netlify"
+                      src="Images/toolset/netlify.png"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Tailwind"
+                      src="Images/toolset/tailwind.jpeg"></div>
+                  <div><img loading="lazy" class="Toolset-Image" width="90%" alt="Tool" title="Google Calendar"
+                      src="Images/toolset/googlecalendar.png"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--todo--------------------------------------------- <Contact Me Section> ----------------------------------------------->
+
+      <section id="contact">
+        <div id="ContactMe_Section">
+          <h1 class="SectionHeads">Contact Me </h1>
+          <section id="connect">
+            </span>
+            <div class="connectsection">
+              <div><label id="letusconnect">Let's <br> Connect</label></div>
+              <div>
+                <form id="letsconnectform" action="https://formspree.io/f/mrgwwqwe" method="POST" target="_blank">
+                  <div class="connecttwonamesdiv">
+                    <label for="">First Name :<br><input id="firstname" type="text" required></label>
+                    <label for="">Last Name :<br><input id="lastname" type="text" required></label>
+                  </div><label for="">Email :<br><input id="email" type="email" name="" id="" required></label>
+                  <br><label for="">Write a Message :<br><textarea name="EnterText" id="textmessage" cols="50" rows="3"
+                      required> </textarea></label>
+                  <div id="connectsubmitdiv">
+                    <input id="submit-button" type="submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div></div>
+        </div>
+      </section>
 
 
-
-
-  <div id="contact">
-  
-    <h2 class="heading">Contact
-      <span style="color: rgb(38, 45, 220);">Me</span>
-    </h2>
-
-    <div class="contact_me">
-      <p id="contact-phone" style="font-size: 20px; color: black;" >Contact Number - +91 7006822034</p>
-      <p>
-      <p id="contact-email"style="font-size: 20px; color: black;" > <a href="mailto:mswani258@gmail.com"></a>
-        Email Address-mswani258@gmail.com
-      </p>
-      </p>
-      <p style="font-size: 20px; color: black;" >Address- Shopian,J&K</p>
-
-      <div>
-        <a class="project-link linkdk" id="contact-linkedin" target="_blank"
-          href="https://www.linkedin.com/in/m-s-wani-1517981ba/"><i style="font-size: 40px" class='bx bxl-linkedin'
-            aria-hidden="true"></i></a>
-
-        <a class="project-link linkd" id="contact-github" target="_blank" href="https://github.com/Shamaiel/"><i
-            style="font-size: 40px" class='bx bxl-github' aria-hidden="true"></i></a>
-
-        <a class="project-link linkd" href="mailto:mswani258@gmail.com.com" target="_blank"><i
-            style="font-size: 40px" class='bx bx-envelope' aria-hidden="true"></i></a>
+  </main>
+  <!--!--------------------------------------------- Footer ----------------------------------------------->
+  <footer>
+    <div>
+      <div class="ballsect2" id="ball5"></div>
+      <div class="ballsect2" id="ball6"></div>
+      <div class="ballsect2" id="ball7"></div>
+      <div class="ballsect2" id="ball8"></div>
+    </div>
+    <div>
+      <div id="footercenter">
+        <div id="connecting">
+          <h3>Connect With Me</h3>
+        </div>
+        <div class="footerimgs">
+          <div><a target="_blank" href="https://www.linkedin.com/in/m-s-wani-1517981ba/">
+              <img loading="lazy" width="50px" src="Images/social/icons8-linkedin.svg "></a></div>
+          <div><a target="_blank" href="https://github.com/Shamaiel">
+              <img loading="lazy" width="50px" src="Images/social/github.svg" /></a></div>
+          <div><a target="_blank"
+              href="https://api.whatsapp.com/send/?phone=917006822034&text&type=phone_number&app_absent=0">
+              <img loading="lazy" width="50px" src="Images/social/icons8-whatsapp.svg" /></a></div>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <label><b>Email</b> : mswani258@gmail.com</label><br>
+        <label><b>Address</b>: Shopian, Kashmir,India</label><br>
+        <label style="font-weight: 400;color: rgb(147, 142, 142);padding-bottom: 30px;">All copyrights reserved®
+        </label>
+        <br>
+      </div>
+    </div>
+  </footer>
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with me!
+      <i id="chat-icon" style="color: #fff; font-size: 1.5rem;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+    <div class="content">
+      <div class="full-chat-block">
+        <div class="outer-container">
+          <div class="chat-container">
+            <div id="chatbox">
+              <h5 id="chat-timestamp"></h5>
+              <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+            </div>
+            <div class="chat-bar-input-block">
+              <div id="userInput">
+                <input id="textInput" class="input-box" type="text" name="msg"
+                  placeholder="Tap 'Enter' to send a message">
+                <p></p>
+              </div>
+              <div class="chat-bar-icons">   
+                <i id="chat-icon" style="color: #5ba9f1; font-size: 1.5rem;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+              </div>
+            </div>
+            <div id="chat-bar-bottom">
+              <p></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-
-  <!--  Contacts Ends -->
-
-
-  <!--  Footer Starts -->
- 
-
-  <footer class="footer">
-    <div  class="footer-text">
-
-      <p> Copyright &copy; 2023 by Mohd Shamaiel Wani  All right Reserved.</p>
-    </div>
-
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
-  </footer>
-
-  <!--  Footer Ends  -->
-
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-
-  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-
-
-  <script src="index.js"></script>
-
-
+  <!--?-------------------------- <AOS> --------------------------------->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

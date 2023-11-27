@@ -1,0 +1,179 @@
+/*? <!----------------------------------------------- < Header Start > -----------------------------------------------> */
+#NavBrand {
+  filter: saturate(2) hue-rotate(20deg);
+}
+#brandbg {
+  font-size: 2rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient( #4158D0, #C850C0, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav {
+  position: fixed !important;
+  z-index: 10;
+  top: 7.3px;
+  width: 100%;
+  padding: 5px 90px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 5px 0px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#NavlinkParent {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 10px;
+}
+#NavlinkParent > div {
+  margin: 10px;
+  margin-right: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+}
+.nav-item {
+  border-radius: 5px;
+  margin: 0px !important;
+  margin-right: 5px !important;
+  padding: 5px 30px !important;
+}
+.nav-link {
+  font-weight: 600 !important;
+  font-size: 22px !important;
+}
+#navclickbtn {
+  display: none;
+  border: 0px !important;
+  border-radius: 5px;
+  padding: 2px !important;
+  background-color: rgba(255, 255, 255, 0);
+}
+#resume-button-1,
+#resume-button-2 {
+  z-index: 999 !important;
+  cursor: pointer;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: var(--borderRadius);
+  color: white;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  border: none;
+  padding: 10px 15px !important;
+}
+#resume-button-1::before,
+#resume-button-2::before {
+  border-radius: var(--borderRadius);
+}
+
+#downloadresume {
+  width: 20%;
+  filter: invert();
+}
+#cvdownload:hover,
+#resume-button-1:hover,
+#resume-button-2:hover {
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+/*? <!----------------------------------------------- < Header End > -----------------------------------------------> */
+
+/*! <!----------------------------------------------- < Media Queries > -----------------------------------------------> */
+@media all and (min-width: 810px) and (max-width: 1360px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+  nav {
+    top: 10px;
+    padding: 10px 20px !important;
+  }
+  #NavlinkParent {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .nav-link {
+    font-size: 18px !important;
+  }
+  .nav-item {
+    border-radius: 5px;
+    margin-right: 2px !important;
+    text-align: center !important;
+    padding: 4px !important;
+  }
+  #firstlinks {
+    margin: 2px !important;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 809px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    padding: 10px !important;
+  }
+  #navclickbtn {
+    display: block;
+    z-index: 10000;
+  }
+  nav {
+    top: 7.3px;
+    padding: 2px !important;
+    z-index: 1000;
+  }
+  .nav-link {
+    transition: all 0ms ease !important;
+    font-size: 30px !important;
+  }
+  .LandingParent {
+    flex-direction: column;
+  }
+  #NavlinkParent {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100% !important;
+    transition: all 300ms ease;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buttonunderline::before {
+    display: none !important;
+  }
+  #NavlinkParent > div {
+    width: 100%;
+    text-align: center;
+  }
+  #NavlinkParent > div:hover {
+    color: rgb(27, 104, 238);
+  }
+  .navtranslate {
+    z-index: 1000;
+    left: 0 !important;
+  }
+  #resume-link-1 {
+    font-size: 20px !important;
+  }
+  #resume-button-2 {
+    font-size: 16px !important;
+    padding: 8px 10px !important;
+  }
+  #resume-button-2 img {
+    margin: 0;
+    height: 100%;
+  }
+}
